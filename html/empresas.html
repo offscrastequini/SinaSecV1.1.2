@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinaSecurity — Empresas cadastradas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/empresas.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html">SinaSecurity</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-section="home">Início</a></li>
+    <li><a href="planos.html" data-section="planos">Planos</a></li>
+    <li><a href="contato.html" data-section="contato">Contato</a></li>
+    <li><a href="empresas.html" class="active" data-section="empresas">Empresas cadastradas</a></li>
+    <li><a href="projectos.html" data-section="projectos">ProjectOS</a></li>
+    <li><a href="downloads.html" data-section="downloads">Downloads</a></li>
+    <li><a href="login.html" data-section="login">Login</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-section="home">Início</a>
+  <a href="planos.html" data-section="planos">Planos</a>
+  <a href="contato.html" data-section="contato">Contato</a>
+  <a href="empresas.html" class="active" data-section="empresas">Empresas cadastradas</a>
+  <a href="projectos.html" data-section="projectos">ProjectOS</a>
+  <a href="downloads.html" data-section="downloads">Downloads</a>
+  <a href="login.html" data-section="login">Login</a>
+</div>
+
+<section id="empresas" class="active">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-tag">Empresas cadastradas</div>
+      <h2>Clientes e ambientes<br>monitorados.</h2>
+      <p>Lista demonstrativa das empresas cadastradas na plataforma SinaSecurity, com plano contratado, status e nível de risco atual.</p>
+    </div>
+
+    <div class="companies-toolbar fade-in">
+      <div>
+        <strong>5 empresas</strong>
+        <span>cadastradas no sistema</span>
+      </div>
+      <button class="btn-primary" onclick="showSection('contato')"><span>Cadastrar empresa</span></button>
+    </div>
+
+    <div class="companies-grid">
+      <div class="company-card fade-in">
+        <div class="company-topline">
+          <h3>Acme Corp</h3>
+          <span class="status-ok">Ativa</span>
+        </div>
+        <p>Plano Growth Shield · Tecnologia</p>
+        <div class="company-meta">
+          <span>Risco: baixo</span>
+          <span>Última análise: hoje</span>
+        </div>
+      </div>
+
+      <div class="company-card fade-in">
+        <div class="company-topline">
+          <h3>NovaPay</h3>
+          <span class="status-alert">Atenção</span>
+        </div>
+        <p>Plano Fortress · Fintech</p>
+        <div class="company-meta">
+          <span>Risco: médio</span>
+          <span>Última análise: ontem</span>
+        </div>
+      </div>
+
+      <div class="company-card fade-in">
+        <div class="company-topline">
+          <h3>HealthData BR</h3>
+          <span class="status-ok">Ativa</span>
+        </div>
+        <p>Plano Startup Secure · Saúde</p>
+        <div class="company-meta">
+          <span>Risco: baixo</span>
+          <span>Última análise: 2 dias</span>
+        </div>
+      </div>
+
+      <div class="company-card fade-in">
+        <div class="company-topline">
+          <h3>CloudWorks</h3>
+          <span class="status-critical">Crítico</span>
+        </div>
+        <p>Plano Growth Shield · Infraestrutura</p>
+        <div class="company-meta">
+          <span>Risco: alto</span>
+          <span>Última análise: hoje</span>
+        </div>
+      </div>
+
+      <div class="company-card fade-in">
+        <div class="company-topline">
+          <h3>EduNext</h3>
+          <span class="status-ok">Ativa</span>
+        </div>
+        <p>Plano Startup Secure · Educação</p>
+        <div class="company-meta">
+          <span>Risco: baixo</span>
+          <span>Última análise: 5 dias</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-spaced">
+    <div class="footer-logo">◈ SinaSecurity</div>
+    <p>© 2025 SinaSecurity. Todos os direitos reservados.</p>
+  </footer>
+</section>
+
+<script src="../js/empresas.js"></script>
+
+</body>
+</html>
