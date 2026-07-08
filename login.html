@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinaSecurity — Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html">SinaSecurity</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-section="home">Início</a></li>
+    <li><a href="planos.html" data-section="planos">Planos</a></li>
+    <li><a href="contato.html" data-section="contato">Contato</a></li>
+    <li><a href="empresas.html" data-section="empresas">Empresas cadastradas</a></li>
+    <li><a href="projectos.html" data-section="projectos">ProjectOS</a></li>
+    <li><a href="downloads.html" data-section="downloads">Downloads</a></li>
+    <li><a href="login.html" class="active" data-section="login">Login</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-section="home">Início</a>
+  <a href="planos.html" data-section="planos">Planos</a>
+  <a href="contato.html" data-section="contato">Contato</a>
+  <a href="empresas.html" data-section="empresas">Empresas cadastradas</a>
+  <a href="projectos.html" data-section="projectos">ProjectOS</a>
+  <a href="downloads.html" data-section="downloads">Downloads</a>
+  <a href="login.html" class="active" data-section="login">Login</a>
+</div>
+
+<section id="login" class="active">
+  <div class="section-inner">
+    <div class="login-wrap fade-in">
+      <div class="login-copy">
+        <div class="section-tag">Login</div>
+        <h2>Acesse sua<br>central segura.</h2>
+        <p>Entre com suas credenciais para acompanhar empresas cadastradas, relatórios de vulnerabilidade e alertas de segurança.</p>
+      </div>
+
+      <form class="login-form" onsubmit="handleLogin(event)" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">E-mail</label>
+          <input type="email" id="loginEmail" name="email" placeholder="seuemail@empresa.com" required>
+        </div>
+        <div class="form-group">
+          <label for="loginSenha">Senha</label>
+          <input type="password" id="loginSenha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <div class="login-options">
+          <label class="remember-me">
+            <input type="checkbox" name="lembrar">
+            <span>Lembrar acesso</span>
+          </label>
+          <a href="contato.html">Esqueci a senha</a>
+        </div>
+        <div class="form-feedback" id="loginFeedback"></div>
+        <button type="submit" class="btn-primary btn-full"><span>Entrar</span></button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer-spaced">
+    <div class="footer-logo">◈ SinaSecurity</div>
+    <p>© 2025 SinaSecurity. Todos os direitos reservados.</p>
+  </footer>
+</section>
+
+<script src="../js/login.js"></script>
+
+</body>
+</html>

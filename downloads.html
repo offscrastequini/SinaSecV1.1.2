@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinaSecurity — Downloads</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/downloads.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html">SinaSecurity</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-section="home">Início</a></li>
+    <li><a href="planos.html" data-section="planos">Planos</a></li>
+    <li><a href="contato.html" data-section="contato">Contato</a></li>
+    <li><a href="empresas.html" data-section="empresas">Empresas cadastradas</a></li>
+    <li><a href="projectos.html" data-section="projectos">ProjectOS</a></li>
+    <li><a href="downloads.html" class="active" data-section="downloads">Downloads</a></li>
+    <li><a href="login.html" data-section="login">Login</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-section="home">Início</a>
+  <a href="planos.html" data-section="planos">Planos</a>
+  <a href="contato.html" data-section="contato">Contato</a>
+  <a href="empresas.html" data-section="empresas">Empresas cadastradas</a>
+  <a href="projectos.html" data-section="projectos">ProjectOS</a>
+  <a href="downloads.html" class="active" data-section="downloads">Downloads</a>
+  <a href="login.html" data-section="login">Login</a>
+</div>
+
+<section id="downloads" class="active">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-tag">Downloads do Sina Project</div>
+      <h2>Ferramentas licenciadas<br>para proteção real.</h2>
+      <p>Central de downloads para ProjectOS, antivírus Sina Project e utilitários de segurança para Linux e Windows.</p>
+    </div>
+
+    <div class="download-grid">
+      <div class="download-card featured fade-in">
+        <div class="download-platform">Linux · Terminal</div>
+        <h3>ProjectOS ISO</h3>
+        <p>Distro Linux sem interface gráfica, criada para administração segura, resposta a incidentes e ambientes de servidor.</p>
+        <button class="btn-primary btn-full"><span>Baixar ISO</span></button>
+      </div>
+
+      <div class="download-card fade-in">
+        <div class="download-platform">Linux</div>
+        <h3>Sina Antivirus Linux</h3>
+        <p>Antivírus licenciado para Linux com varredura por terminal, proteção de arquivos e integração com logs do sistema.</p>
+        <button class="btn-outline btn-full">Baixar .deb / .rpm</button>
+      </div>
+
+      <div class="download-card fade-in">
+        <div class="download-platform">Windows</div>
+        <h3>Sina Antivirus Windows</h3>
+        <p>Proteção licenciada para Windows com monitoramento local, análise de ameaças e quarentena de arquivos suspeitos.</p>
+        <button class="btn-outline btn-full">Baixar instalador</button>
+      </div>
+
+      <div class="download-card fade-in">
+        <div class="download-platform">CLI</div>
+        <h3>Sina CLI Tools</h3>
+        <p>Pacote de ferramentas para validação de integridade, diagnóstico de rede e coleta de evidências via terminal.</p>
+        <button class="btn-outline btn-full">Baixar ferramentas</button>
+      </div>
+    </div>
+
+    <div class="license-note fade-in">
+      <h3>Licenciamento</h3>
+      <p>Os downloads são demonstrativos. Para ativação, atualizações e suporte empresarial, solicite uma licença Sina Project pelo contato comercial.</p>
+      <button class="btn-primary" onclick="showSection('contato')"><span>Solicitar licença</span></button>
+    </div>
+  </div>
+
+  <footer class="footer-spaced">
+    <div class="footer-logo">◈ SinaSecurity</div>
+    <p>© 2025 SinaSecurity. Todos os direitos reservados.</p>
+  </footer>
+</section>
+
+<script src="../js/downloads.js"></script>
+
+</body>
+</html>

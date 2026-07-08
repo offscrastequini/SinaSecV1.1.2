@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinaSecurity — Contato</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html">SinaSecurity</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-section="home">Início</a></li>
+    <li><a href="planos.html" data-section="planos">Planos</a></li>
+    <li><a href="contato.html" class="active" data-section="contato">Contato</a></li>
+    <li><a href="empresas.html" data-section="empresas">Empresas cadastradas</a></li>
+    <li><a href="projectos.html" data-section="projectos">ProjectOS</a></li>
+    <li><a href="downloads.html" data-section="downloads">Downloads</a></li>
+    <li><a href="login.html" data-section="login">Login</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-section="home">Início</a>
+  <a href="planos.html" data-section="planos">Planos</a>
+  <a href="contato.html" class="active" data-section="contato">Contato</a>
+  <a href="empresas.html" data-section="empresas">Empresas cadastradas</a>
+  <a href="projectos.html" data-section="projectos">ProjectOS</a>
+  <a href="downloads.html" data-section="downloads">Downloads</a>
+  <a href="login.html" data-section="login">Login</a>
+</div>
+
+<section id="contato" class="active">
+<div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-tag">Contato</div>
+      <h2>Vamos proteger<br>seu negócio.</h2>
+      <p>Resposta garantida em até 24 horas úteis. Para emergências de segurança, use nosso canal prioritário.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <h3>Fale com nosso time</h3>
+        <p>Nossa equipe de especialistas está pronta para entender seus desafios e apresentar as soluções mais adequadas ao seu contexto.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <strong>E-mail Geral</strong>
+            contato@sinasecurity.com.br
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🚨</div>
+          <div class="contact-detail-text">
+            <strong>Emergências de Segurança</strong>
+            sos@sinasecurity.com.br
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Localização</strong>
+            São Paulo, SP — Brasil (atendimento remoto nacional)
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕐</div>
+          <div class="contact-detail-text">
+            <strong>Horário Comercial</strong>
+            Seg–Sex, 09h às 18h (BRT)
+          </div>
+        </div>
+
+        <div class="response-time">
+          <div class="response-time-title">Tempo de Resposta</div>
+          <p class="response-time-text">Consultas gerais: <strong>até 24h úteis</strong><br>Clientes ativos: <strong>até 4h</strong><br>Emergências: <strong class="text-gold">imediato (24/7)</strong></p>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="João Silva" required>
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Acme Corp">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail corporativo *</label>
+            <input type="email" id="email" name="email" placeholder="joao@suaempresa.com" required>
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione...</option>
+              <option>Avaliação gratuita de segurança</option>
+              <option>Plano Startup Secure</option>
+              <option>Plano Growth Shield</option>
+              <option>Plano Fortress (Enterprise)</option>
+              <option>Pentest pontual</option>
+              <option>Emergência de segurança</option>
+              <option>Parceria / Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente seu ambiente, tamanho da equipe e principais preocupações de segurança..." required></textarea>
+          </div>
+          <div class="form-feedback" id="formFeedback"></div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn"><span>Enviar Mensagem →</span></button>
+          <p class="privacy-note">* Seus dados são tratados conforme nossa Política de Privacidade e a LGPD.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-spaced">
+    <div class="footer-logo">◈ SinaSecurity</div>
+    <p>© 2025 SinaSecurity. Todos os direitos reservados.</p>
+  </footer>
+</section>
+
+<script src="../js/contato.js"></script>
+
+</body>
+</html>
